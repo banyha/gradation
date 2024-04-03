@@ -50,15 +50,49 @@
         transform: translateY(100vh) rotate(360deg);
       }
     }
+    
+    /* 네비게이션 스타일 */
+    nav {
+      width: 700px; /* 네비게이션 바의 길이를 700px로 설정 */
+      position: absolute;
+      top: 20px;
+      right: 100px; /* 오른쪽 패딩 추가 */
+      background-color: rgba(255, 255, 255, 0.3); /* 배경색 */
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-sizing: border-box; /* 요소의 패딩과 테두리를 포함하여 크기를 계산 */
+      display: flex;
+      justify-content: space-between; /* 링크를 균등하게 배치 */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* 홈 링크 스타일 */
+    nav a:first-child {
+      margin-left: 100px; /* 왼쪽 여백 추가 */
+    }
+
+    /* 문의 링크 스타일 */
+    nav a:last-child {
+      margin-right: 100px; /* 오른쪽 여백 추가 */
+    }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#">홈</a>
+    <a href="#">서비스</a>
+    <a href="#">포트폴리오</a>
+    <a href="#">문의</a>
+  </nav>
   <div class="container">
     <div class="content">
       <h1>Welcome to Beautiful Frontend</h1>
       <p>This is a simple example of a beautiful frontend design.</p>
     </div>
-    
   </div>
 </body>
 </html>
